@@ -1,6 +1,7 @@
 const Todo = require('./todo')
 
 Todo.methods(['get','post','put','delete'])
-Todo.updateOptions({new:true,runValidator:true})
+// essa parte faz com que retorne o registro novo
+Todo.updateOptions({new:true,runValidator:true}) 
 
 module.exports = Todo
